@@ -1,0 +1,16 @@
+%% 
+  
+[1-9][0-9]{9} {printf("\nNumero Valido\n");} 
+  
+.+ {printf("\nNumero invalidó \n");} 
+  
+%% 
+  
+
+int main()  
+{ 
+    printf("\nNumero Celular : "); 
+    yylex(); 
+    printf("\n"); 
+    return 0; 
+}

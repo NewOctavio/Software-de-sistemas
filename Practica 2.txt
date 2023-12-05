@@ -1,0 +1,11 @@
+%%
+
+^xa*b$   { printf("Cadena válida: %s\n", yytext); }
+.        { printf("Cadena inválida: %s\n", yytext); }
+
+%%
+
+int main() {
+    yylex();
+    return 0;
+}
